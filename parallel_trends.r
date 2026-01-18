@@ -1,3 +1,6 @@
+library(dplyr)
+library(ggplot2)
+
 panel_data <- read.csv("rta_panel.csv")
 
 # Create Variables
@@ -25,7 +28,7 @@ panel_data <- panel_data |>
 panel_data <- dummy_cols(panel_data, select_columns = "event_time")
 
 #Compute average ln_loss by event_time and enviro_rta2, and confidence intervals
-library(dplyr)
+
 ci_ln_loss <- panel_data %>%
   group_by(event_time, enviro_rta2) %>%
   summarize(avg_ln_loss = mean(ln_loss, na.rm = TRUE), 
@@ -38,7 +41,6 @@ print(ci_ln_loss)
 
 
 #Plot average ln_loss by event_time and enviro_rta2 with confidence intervals
-library(ggplot2)
 ggplot(ci_ln_loss, aes(x = event_time, y = avg_ln_loss, color = enviro_rta2)) +
   geom_line() +
   geom_point() +
@@ -49,10 +51,10 @@ ggplot(ci_ln_loss, aes(x = event_time, y = avg_ln_loss, color = enviro_rta2)) +
   theme_minimal()
 
 
+
 #Now I want to compute average treatment effects by event time
-library(dplyr)
 library(fixest)
-event_study_model <- feols(ln_loss ~ i(event_time, enviro_rta2, ref = -1) | id2 + year, data = panel_data)
+event_study_model <- feols(ln_loss ~ i(event_time, enviro_rta2, ref = -1) | id + year, data = panel_data)
 summary(event_study_model)
 
 #I want to extract the coefficients and confidence intervals for plotting
@@ -64,9 +66,9 @@ event_study_confint <- confint(event_study_model)
 name_parts <- strsplit(names(event_study_coefs), ":")
 event_study_df <- data.frame(
   part1 = sapply(name_parts, function(x) x[1]),
-  part2 = sapply(name_parts, function(x) ifelse(length(x) >= 2, x[2], NA)),
-  part3 = sapply(name_parts, function(x) ifelse(length(x) >= 3, x[3], NA)),
-  event_time = as.numeric(gsub("i\\(event_time, enviro_rta2, ref = -1\\)\\[|:.*", "", names(event_study_coefs))),
+  event_time = sapply(name_parts, function(x) ifelse(length(x) >= 3, x[3], NA)),
+  part3 = sapply(name_parts, function(x) ifelse(length(x) >= 4, x[4], NA)),
+  part4 = sapply(name_parts, function(x) ifelse(length(x) >= 6, x[6], NA)),
   coef = event_study_coefs,
   lower = event_study_confint[, 1],
   upper = event_study_confint[, 2]

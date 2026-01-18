@@ -101,60 +101,55 @@ However, deforestation is almost irreversible: therefore, while the effect of RT
 
 The second assumption that needs to be analysed is the parallel trends assumption.
 
+In order to do that, we present two plots that compare the trends of deforestation in RTAs with and without enviromental provisions before the implementation of the agreement.
+
+The first plot shows the average deforestation rate across RTAs with and without enviromental provisions in the years before and after the implementation of the agreement.
+
+The second plot shows the results of an event study estimation, where we estimate the following model:
+\begin{equation*}
+    y_{gt} = \sum_{k \neq -1} \beta_k D_{g,t+k} + \alpha_g + \gamma_t + \varepsilon_{gt}
+\end{equation*}
+where $D_{g,t+k}$ is a dummy variable equal to 1 if the year $t$ is $k$ years after the implementation of the RTA $g$ (if $k$ is negative, it means that the year is before the implementation of the RTA); the omitted category is $k = -1$, that is, the year before the implementation of the RTA.
+
+It can be noted that the two plots are basically equivalent: in fact, the second plot is a representation of the first one where the lines of treatment and control group have been shifted to have value 0 in the year before the implementation of the RTA.
+
 \newpage
 
 \subsection*{Standard errors corrected with sparse cross-cluster correlations}
 
-We develop an extension to the standard approach to clustered covariance matrices.
-We allow for sparse cross-cluster correlation in the covariance matrix induced by
-overlapping cluster membership. Leveraging the structural information about the
-presence and degree of cluster overlap, we develop a covariance matrix that allows
-for within-country correlations in our RTA-level triple-difference model. Consider
-the standard matrix representation of equation (2)
+Before exploring the results of the model estimation, it is important to note that, while the coefficients are estimated in a conventional way, the study employs an unconventional approach, that we replicated, to compute standard errors.
 
-\begin{equation*}
-Y = X\beta + \varepsilon
-\end{equation*}
+In fact, standard errors are clustered at the RTA level, but, because of the presence of overlapping membership across RTAs, the authors have developed a method to allow for sparse cross-cluster correlation in the covariance matrix.
 
-then the covariance matrix of the vector of coefficient estimates $\hat{\beta}$ is given by
+The first step is to define a matrix $W$ that captures the overlapping membership across RTAs, that are indicated in the next equations by $g$ and $h$.
 
-\begin{equation*}
-\mathrm{Var}[\hat{\beta}] = (X'X)^{-1} \hat{V} (X'X)^{-1}
-\end{equation*}
-
-where $\hat{V}$ is the cluster-robust covariance matrix with sparse cross-cluster
-correlations, which we define as
-
-\begin{equation*}
-\hat{V} = \sum_{g=1}^{n} \sum_{h=1}^{n}
-w_{g,h} X_g' \hat{\varepsilon}_g \hat{\varepsilon}_h' X_h,
-\end{equation*}
-
-where $g$ and $h$ index agreements, $n$ is the number of agreements in our matched
-sample, and $w_{g,h}$ is a weighting function that allows for sparse cross-cluster
-correlation. Let $n_g$ and $n_h$ denote the number of countries that are party to trade
-agreements $g$ and $h$, respectively, and $G$ and $H$ denote the set of parties to each
-respective agreement. Then, our weight function is given by
-
+Each element $w_{g,h}$ of the matrix $W$ is defined as follows:
 \begin{equation*}
 w_{g,h} = \frac{1}{n_g} \sum_{k \in G} \mathbf{1}[k \in H],
 \end{equation*}
 
 where $\mathbf{1}[k \in G] = 1$ if country $k$ is a party to agreement $g$.
-If there is no membership overlap between agreements $g$ and $h$, $w_{g,h} = 0$, and
-we restrict the cross-cluster correlation between cluster $g$ and $h$ to be zero.
-If there is overlap, we allow for cross-cluster correlation but weight it by the
-degree of overlap, that is, the share of total members to agreement $g$ that are also
-members to agreement $h$. Note that our cluster-robust covariance matrix with sparse
-cross-cluster correlations is a generalization of the standard cluster-robust
-covariance matrix and nests the standard approach—if there is no overlapping agreement
-membership, $w_{g,h} = 1$ if $g = h$ and $w_{g,h} = 0$ for $g \neq h$.
+If there is no membership overlap between agreements $g$ and $h$, $w_{g,h} = 0$.
+If there is overlap, cross-cluster correlation is weighted by the degree of overlap, that is, the share of total members to agreement $g$ that are also members to agreement $h$.
 
-The structural source of cross-cluster correlation in our experimental setting—
-cluster membership overlap—suggests that these cross-cluster correlations will be
-positive. Consequently, our approach should yield larger standard errors and, hence,
-represents a more conservative approach to inference relative to standard
-cluster-robust methods.
+Then, a covariance matrix $\hat{V}$ allowing for sparse cross-cluster correlation is defined as follows: 
+\begin{equation*}
+\hat{V} = \sum_{g=1}^{n} \sum_{h=1}^{n}
+w_{g,h} X_g' \hat{\varepsilon}_g \hat{\varepsilon}_h' X_h,
+\end{equation*}
+
+where $X_g$ is the matrix of regressors for agreement $g$, and $\hat{\varepsilon}_g$ is the vector of residuals for agreement $g$.
+
+Finally, the variance-covariance matrix of the estimated coefficients is given by:
+
+\begin{equation*}
+\mathrm{Var}[\hat{\beta}] = (X'X)^{-1} \hat{V} (X'X)^{-1}
+\end{equation*}
+
+We have implemented this methodology to compute standard errors wherever the authors used it in the original paper.
+
+
+
 
 
 
@@ -162,7 +157,10 @@ cluster-robust methods.
 
 \subsection*{Model estimation for deforestation}
 
-\subsubsection*{Parallel trends}
+The main variables of interest in the original paper are the ones related to deforestation.
+Therefore, we will firstly present the results obtained when using deforestation as outcome variable.
+
+As previously exposed, the standard errors are computed allowing for sparse cross-cluster correlation.
 
 \subsubsection*{Results}
 
@@ -170,8 +168,19 @@ cluster-robust methods.
 
 \subsection*{Model estimation for other variables}
 
+Abman, R., Lundberg, C., and Ruta, M. (2024) then proceed to estimate the same models using other outcome variables.
+
+The first extension is to differentiate agreements based on the signatories: in particular, they distinguish between agreements that involve tropical countries, agreements that involve developing countries, and agreements that involve countries with high risk of losing biodiversity.
+
+\subsubsection*{Results}
+
 \newpage
 
 \subsection*{Inclusion of enforcement mechanisms}
+
+Another extension performed in the original paper is to differentiate enviromental provisions based on the presence of enforcement mechanisms.
+In fact, when policy analysis is conducted, it is important to understand whether the inclusion of special enforcement mechanisms make enviromental provisions more effective.
+
+\subsubsection*{Results}
 
 \end{document}

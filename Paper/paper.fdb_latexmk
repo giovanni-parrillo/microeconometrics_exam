@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1768830997.16483 "/Users/giovannistivella/Desktop/microeconometrics/microeconometrics_exam/Paper/paper.tex" "paper.pdf" "paper" 1768830997.47683 0
-  "/Users/giovannistivella/Desktop/microeconometrics/microeconometrics_exam/Paper/paper.tex" 1768830996.99034 32213 6d272989777ee4dacf0791e9136f22e7 ""
+["pdflatex"] 1768844898.18539 "/Users/giovannistivella/Desktop/microeconometrics/microeconometrics_exam/Paper/paper.tex" "paper.pdf" "paper" 1768844898.5106 0
+  "/Users/giovannistivella/Desktop/microeconometrics/microeconometrics_exam/Paper/paper.tex" 1768844898.00895 34528 ad0a2a3f489023ddd405ecd91f22daf4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -59,11 +59,12 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "Choosing_lambda_Lasso.pdf" 1768806765.38218 12955 14670572e4c9f7a71d9223d76da75ad9 ""
   "Copertina.tex" 1768754618.86237 530 8ffe6c24fb4ea2f4ee4406340fba1cff ""
+  "Countryeffects.pdf" 1768827366.63081 6422 3a75f533e3404433a0f3bb21acf81c47 ""
   "Parallel_trends_averages.pdf" 1768806268.88064 6542 fdf42c3f417ea5ae5ece616d1c57b94c ""
   "Parallel_trends_event_study.pdf" 1768806282.15984 6501 bd1c39b78cfc0a0a869d483a4c803180 ""
   "Propensity_score_density.pdf" 1768806799.47647 13191 3a05712f5fc6aabd124b71ba30cd82f5 ""
-  "paper.aux" 1768830997.44201 839 377f7dcdeccc49caa5bc1a44235117de "pdflatex"
-  "paper.tex" 1768830996.99034 32213 6d272989777ee4dacf0791e9136f22e7 ""
+  "paper.aux" 1768844898.47539 1071 be486005e497e8af82b7b62b4aa7a333 "pdflatex"
+  "paper.tex" 1768844898.00895 34528 ad0a2a3f489023ddd405ecd91f22daf4 ""
   (generated)
   "paper.aux"
   "paper.log"

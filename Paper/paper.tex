@@ -313,14 +313,20 @@ The first extension is to use a subset of of country-level forest loss across ag
 
 
 }
+\raggedright
+\vspace{2em}
 
-We were able to replicate their analysis, obtaining similar results: in particular, the effects of RTAs with or without enviromental provisions are significant only in high-risk Countries, while they are not significant in low-risk Countries.
-
+We were able to replicate their analysis, obtaining similar results: in particular, the effects of RTAs with or without enviromental provisions are significant only in high-risk Countries, while they are ambigous in low-risk Countries.
+\raggedright
+\vspace{2em}
 
 \subsubsection*{Analyzing mechanisms}
 
+The authors of the original paper then proceed to study the effect of RTAs and enviromental provisions on other outcome variables: the rationale is to study which are the mechanisms through which RTAs and enviromental provisions affect deforestation.
 
+They focus on developing and tropical Countries, as these are groups of Countries where the effect of RTAs and enviromental provisions have been found to be more significant.
 
+\vspace{2em}
 \centering
 \textbf{Replication of Table 4A: Economic Outcomes for developing countries}
 
@@ -355,6 +361,9 @@ We were able to replicate their analysis, obtaining similar results: in particul
 
 
 }
+
+
+\vspace{2em}
 
 \centering
 \textbf{Replication of Table 4B: Economic Outcomes for tropical countries}
@@ -391,6 +400,14 @@ We were able to replicate their analysis, obtaining similar results: in particul
 
 }
 
+\vspace{2em}
+\raggedright
+
+As we can see from the tables above, the most significant effects are on the harvest area and harvest quantity: that is consistent with the aforementioned mechanism of deforestation driven by agricultural land expansion.
+
+Another aspect investigated by the authors is the effect of RTAs and enviromental provisions on government involvement in the agricultural and forestry sectors, which is shown in the next tables.
+
+\vspace{2em}
 
 \centering
 \textbf{Replication of Table 5A: Government involvement for developing countries}
@@ -427,6 +444,7 @@ We were able to replicate their analysis, obtaining similar results: in particul
 
 }
 
+\vspace{2em}
 
 \centering
 \textbf{Replication of Table 5B: Government involvement for tropical countries}
@@ -464,6 +482,7 @@ Dependent Variables:    & Ag recurring    & Ag R\&D    & Ag capital    & Forest 
 
 
 }
+\raggedright
 
 \newpage
 
@@ -512,5 +531,36 @@ In fact, when policy analysis is conducted, it is important to understand whethe
 
 
 }
+
+\raggedright
+\vspace{2em}
+
+Quite counterintuitively, if we consider the effect on forest loss, the presence of enforcement mechanisms seems to reduce the effectiveness of environmental provisions.
+
+\newpage
+
+\section*{Country-level analysis}
+
+Finally, the authors of the original paper perform a country-level analysis, where they estimate the effect of RTAs and enviromental provisions on deforestation at the country level.
+
+The model estimated is the following:
+\begin{align*}
+    y_{it} & = \delta_{LR-} \mathds{1}[{RTA}_{(<-3),it}] + \sum_{s=-3, s \neq -1}^{3} \delta_s \mathds{1}[ {RTA}_{s,it}] + \delta_{LR+} \mathds{1}[{RTA}_{(>3),it}] \\
+    & + \xi_{LR-}\mathds{1}[enviro_{(<-3),it}]+ \sum_{s=-3, s \neq -1}^{3} \xi_s \mathds{1}[ {enviro}_{s,it}] + \xi_{LR+} \mathds{1}[enviro_{(>3),it}]\\
+   &  \alpha_i + \gamma_t + \varepsilon_{it}
+\end{align*}
+
+In the figure below, we present the estimated $\delta_s$ coefficients, which are represented by the control group line, and the estimated combined effect of having an RTA with enviromental provisions, represented by the treatment group line.
+
+\vspace{2em}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Countryeffects.pdf}
+\caption{Country-Level Effects of Enviromental Provisions on Deforestation}
+\label{fig:parallel_trends_averages}
+\end{figure}
+
+
 
 \end{document}

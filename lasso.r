@@ -21,7 +21,7 @@ target_var <- "enviro_rta"
 exclude_cols <- c(
   "id", "Agreement", "parties", # IDs / Metadata
   "enviro_rta", "enviro_enforce_rta", # Target & Treatment characteristics
-  "defor", "biodiv", "defor_enforce", "biodiv_enforce", # Outcomes (Bad controls)
+  "defor", "biodiv", "defor_enforce", "biodiv_enforce" # Outcomes (Bad controls)
 )
 
 x_data <- df %>% 

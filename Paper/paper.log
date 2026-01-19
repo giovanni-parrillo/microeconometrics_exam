@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  19 JAN 2026 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  19 JAN 2026 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -232,12 +232,12 @@ Package pdftex.def Info: Propensity_score_density.pdf  used on input line 83.
 <Parallel_trends_averages.pdf, id=46, 712.6625pt x 366.36874pt>
 File: Parallel_trends_averages.pdf Graphic file (type pdf)
 <use Parallel_trends_averages.pdf>
-Package pdftex.def Info: Parallel_trends_averages.pdf  used on input line 133.
+Package pdftex.def Info: Parallel_trends_averages.pdf  used on input line 132.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 <Parallel_trends_event_study.pdf, id=47, 712.6625pt x 366.36874pt>
 File: Parallel_trends_event_study.pdf Graphic file (type pdf)
 <use Parallel_trends_event_study.pdf>
-Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 140.
+Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 139.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
 

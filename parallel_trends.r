@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(fastDummies)
 
 matched_data <- read.csv("matched_data_fixed.csv")
 
@@ -41,8 +42,13 @@ ggplot(ci_ln_loss, aes(x = event_time, y = avg_ln_loss, color = group)) +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2) +
   labs(title = "Event Study: Impact of RTA on Log Loss",
        x = "Event Time (Years since RTA Entry into Force)",
-       y = "Coefficient on Log Loss",
+       y = "Average Log Loss",
        color = "Group") +
+  scale_color_manual(values = c("treat" = "red", "control" = "black")) +
+  scale_x_continuous(
+    breaks = c(-4, -3, -2, -1, 0, 1, 2, 3, 4),
+    labels = c("≤-4", "-3", "-2", "-1", "0", "1", "2", "3", "≥4"),
+    limits = c(-4, 4)) +
   theme_minimal()
 
 #Now I want to compute average treatment effects by event time
@@ -99,4 +105,9 @@ ggplot(event_study_df, aes(x = event_time, y = coef, color = part4)) +
        x = "Event Time (Years since RTA Entry into Force)",
        y = "Coefficient on Log Loss",
        color = "Group") +
+  scale_color_manual(values = c("treat" = "red", "control" = "black")) +
+  scale_x_continuous(
+    breaks = c(-4, -3, -2, -1, 0, 1, 2, 3, 4),
+    labels = c("≤-4", "-3", "-2", "-1", "0", "1", "2", "3", "≥4"),
+    limits = c(-4, 4)) +
   theme_minimal()

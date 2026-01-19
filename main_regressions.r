@@ -648,7 +648,7 @@ cat("}\n\n\\vspace{2em}\n\n", file = out_file, append = TRUE)
     # remove negative
     matched_data$dev_ag_cap_tot[matched_data$dev_ag_cap_tot < 0] <- 0
   dev_ag_cap_tot_model <- feols(
-    dev_ag_cap_tot  ~ post_rta + post_rta:enviro_rta | id + year,
+    log(dev_ag_cap_tot+1)  ~ post_rta + post_rta:enviro_rta | id + year,
     data = matched_data,
     cluster = ~id,
     weights = ~weights)

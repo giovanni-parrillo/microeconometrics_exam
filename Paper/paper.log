@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  19 JAN 2026 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  19 JAN 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -61,7 +61,26 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen151
+\lightrulewidth=\dimen152
+\cmidrulewidth=\dimen153
+\belowrulesep=\dimen154
+\belowbottomsep=\dimen155
+\aboverulesep=\dimen156
+\abovetopsep=\dimen157
+\cmidrulesep=\dimen158
+\cmidrulekern=\dimen159
+\defaultaddspace=\dimen160
+\@cmidla=\count274
+\@cmidlb=\count275
+\@aboverulesep=\dimen161
+\@belowrulesep=\dimen162
+\@thisruleclass=\count276
+\@lastruleclass=\count277
+\@thisrulewidth=\dimen163
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip52
 
@@ -71,21 +90,21 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
-\ex@=\dimen151
+\ex@=\dimen164
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen152
+\pmbraise@=\dimen165
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count274
+\inf@bad=\count278
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count275
-\leftroot@=\count276
+\uproot@=\count279
+\leftroot@=\count280
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count277
-\DOTSCASE@=\count278
+\classnum@=\count281
+\DOTSCASE@=\count282
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -95,30 +114,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen153
+\big@size=\dimen166
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count279
+\macc@depth=\count283
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count280
+\c@MaxMatrixCols=\count284
 \dotsspace@=\muskip17
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
+\c@parentequation=\count285
+\dspbrk@lvl=\count286
 \tag@help=\toks24
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
+\row@=\count287
+\column@=\count288
+\maxfields@=\count289
 \andhelp@=\toks25
-\eqnshift@=\dimen154
-\alignsep@=\dimen155
-\tagshift@=\dimen156
-\tagwidth@=\dimen157
-\totwidth@=\dimen158
-\lineht@=\dimen159
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
 \@envbody=\toks26
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -141,41 +160,41 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
+\l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box54
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen162
+\scratchcounter=\count291
+\scratchdimen=\dimen175
 \scratchbox=\box55
-\nofMPsegments=\count288
-\nofMParguments=\count289
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen163
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen176
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -189,18 +208,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 
 [1]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 63.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 64.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 
 [2]
+<Choosing_lambda_Lasso.pdf, id=24, 712.6625pt x 366.36874pt>
+File: Choosing_lambda_Lasso.pdf Graphic file (type pdf)
+<use Choosing_lambda_Lasso.pdf>
+Package pdftex.def Info: Choosing_lambda_Lasso.pdf  used on input line 73.
+(pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
+<Propensity_score_density.pdf, id=25, 712.6625pt x 366.36874pt>
+File: Propensity_score_density.pdf Graphic file (type pdf)
+<use Propensity_score_density.pdf>
+Package pdftex.def Info: Propensity_score_density.pdf  used on input line 83.
+(pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
-[3]
+
+[3 <./Choosing_lambda_Lasso.pdf> <./Propensity_score_density.pdf>]
 
 [4]
+<Parallel_trends_averages.pdf, id=46, 712.6625pt x 366.36874pt>
+File: Parallel_trends_averages.pdf Graphic file (type pdf)
+<use Parallel_trends_averages.pdf>
+Package pdftex.def Info: Parallel_trends_averages.pdf  used on input line 133.
+(pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
+<Parallel_trends_event_study.pdf, id=47, 712.6625pt x 366.36874pt>
+File: Parallel_trends_event_study.pdf Graphic file (type pdf)
+<use Parallel_trends_event_study.pdf>
+Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 140.
+(pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
-[5]
+
+[5 <./Parallel_trends_averages.pdf> <./Parallel_trends_event_study.pdf>]
 
 [6]
 
@@ -208,25 +249,29 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 
 [8]
 
-[9] (./paper.aux)
+[9]
+
+[10]
+
+[11] (./paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2483 strings out of 473190
- 38915 string characters out of 5715799
- 436373 words of memory out of 5000000
- 25720 multiletter control sequences out of 15000+600000
+ 2590 strings out of 473190
+ 41377 string characters out of 5715799
+ 459320 words of memory out of 5000000
+ 25823 multiletter control sequences out of 15000+600000
  562682 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,862b,188s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,9n,65p,862b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb>
-Output written on paper.pdf (10 pages, 155903 bytes).
+Output written on paper.pdf (12 pages, 214350 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

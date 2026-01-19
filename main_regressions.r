@@ -489,7 +489,7 @@ etable(
   tex = TRUE,
   file = out_file,
   replace = FALSE,
-  title = NULL,
+  title = NULL
   # notes = "Note: All regressions include country and year fixed effects. Robust covariance matrices accounting for cross-cluster correlation are used for all specifications."
 )
 
@@ -890,3 +890,5 @@ etable(
 )
 
 cat("}\n\n\\end{document}", file = out_file, append = TRUE)
+
+

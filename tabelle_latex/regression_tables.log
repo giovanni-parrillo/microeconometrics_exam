@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.11.19)  19 JAN 2026 03:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.11.19)  19 JAN 2026 04:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -226,42 +226,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (24.42665pt too wide) in paragraph at lines 118--118
+Overfull \hbox (24.42665pt too wide) in paragraph at lines 119--119
 []\OT1/cmr/bx/n/14.4 Table 4A: Mech-a-nism - De-vel-op-ing Coun-tries Agri-cul-ture & Forestry 
  []
 
 
-/home/alfred/Desktop/microeconometria/microeconometrics_exam/tabelle_latex/regression_tables.tex:121: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (2.91832pt too wide) in paragraph at lines 125--125
+Overfull \hbox (2.91832pt too wide) in paragraph at lines 155--155
 []\OT1/cmr/bx/n/14.4 Table 4B: Mech-a-nism - Trop-i-cal Coun-tries Agri-cul-ture & Forestry 
  []
 
-[2] [3] (./regression_tables.aux) ) 
+[2] [3] [4] (./regression_tables.aux) ) 
 Here is how much of TeX's memory you used:
  3111 strings out of 478287
  46375 string characters out of 5849288
- 363871 words of memory out of 5000000
+ 370871 words of memory out of 5000000
  21301 multiletter control sequences out of 15000+600000
  471909 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,62p,306b,161s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,62p,337b,161s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on regression_tables.pdf (3 pages, 93989 bytes).
+Output written on regression_tables.pdf (4 pages, 95475 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

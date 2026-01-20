@@ -4,9 +4,6 @@ library(fastDummies)
 
 matched_data <- read.csv("matched_data_fixed.csv")
 
-# Create Variables
-# Create Post variable (1 if year >= entry_year)
-matched_data$post_rta <- ifelse(matched_data$year >= matched_data$Entry.into.Force, 1, 0)
 # Create Log Loss (Outcome)
 matched_data$ln_loss <- log(matched_data$loss+1) #because in matched_data there are losses=0
 #Create a variable for treatment group
@@ -65,9 +62,9 @@ event_study_confint <- confint(event_study_model)
 name_parts <- strsplit(names(event_study_coefs), ":")
 event_study_df <- data.frame(
   part1 = sapply(name_parts, function(x) x[1]),
-  event_time = as.integer(sapply(name_parts, function(x) ifelse(length(x) >= 3, x[3], NA))),
-  part3 = sapply(name_parts, function(x) ifelse(length(x) >= 4, x[4], NA)),
-  part4 = sapply(name_parts, function(x) ifelse(length(x) >= 6, x[6], NA)),
+  event_time = as.integer(sapply(name_parts, function(x) x[3])),
+  part3 = sapply(name_parts, function(x) x[4]),
+  part4 = sapply(name_parts, function(x) x[6]),
   coef = event_study_coefs,
   lower = event_study_confint[, 1],
   upper = event_study_confint[, 2]

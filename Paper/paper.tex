@@ -2,6 +2,7 @@
 \usepackage{soul, color}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{ragged2e}
 \usepackage{dsfont}
 \usepackage{graphicx} % Required for inserting images
 
@@ -221,6 +222,7 @@ As previously exposed, the standard errors are computed allowing for sparse cros
 \raggedright
 
 \vspace{2em}
+\justifying
 
 As we can see, the main result of this model estimation is that RTAs without enviromental provisions lead to an increase in forest loss, but enviromental provisions are quite effective in mitigating this effect.
 That result is obtained by accounting for endogeneity through propensity score matching, while the results are quite different when the entire dataset is considered without matching (and therefore, without accounting for heterogeneity).
@@ -316,12 +318,14 @@ The first extension is to use a subset of of country-level forest loss across ag
 \raggedright
 \vspace{2em}
 
+\justifying
+
 We were able to replicate their analysis, obtaining similar results: in particular, the effects of RTAs with or without enviromental provisions are significant only in high-risk Countries, while they are ambigous in low-risk Countries.
 \raggedright
 \vspace{2em}
 
 \subsubsection*{Analyzing mechanisms}
-
+\justifying
 The authors of the original paper then proceed to study the effect of RTAs and enviromental provisions on other outcome variables: the rationale is to study which are the mechanisms through which RTAs and enviromental provisions affect deforestation.
 
 They focus on developing and tropical Countries, as these are groups of Countries where the effect of RTAs and enviromental provisions have been found to be more significant.
@@ -401,7 +405,8 @@ They focus on developing and tropical Countries, as these are groups of Countrie
 }
 
 \vspace{2em}
-\raggedright
+
+\justifying
 
 As we can see from the tables above, the most significant effects are on the harvest area and harvest quantity: that is consistent with the aforementioned mechanism of deforestation driven by agricultural land expansion.
 
@@ -488,6 +493,8 @@ Dependent Variables:    & Ag recurring    & Ag R\&D    & Ag capital    & Forest 
 
 \subsection*{Inclusion of enforcement mechanisms}
 
+\justifying
+
 Another extension performed in the original paper is to differentiate enviromental provisions based on the presence of enforcement mechanisms.
 In fact, when policy analysis is conducted, it is important to understand whether the inclusion of special enforcement mechanisms make enviromental provisions more effective.
 
@@ -532,8 +539,11 @@ In fact, when policy analysis is conducted, it is important to understand whethe
 
 }
 
-\raggedright
+
+\justifying 
 \vspace{2em}
+
+
 
 Quite counterintuitively, if we consider the effect on forest loss, the presence of enforcement mechanisms seems to reduce the effectiveness of environmental provisions.
 

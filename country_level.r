@@ -1,4 +1,5 @@
 library(fixest)
+library(ggplot2)
 
 df <- read.csv("country_panel.csv")
 
@@ -78,14 +79,12 @@ final_results$time <- sapply(final_results$term, function(x) {
     return(3)
   } else if (grepl("^lag_LR", x)) {
     return(4)
-  } else {
-    return(NA)
   }
 })
 
 #Add two rows with time =-1 and estimate = 0 and std_error = 0 for both groups
 final_results <- rbind(final_results, data.frame(
-  term = c("placebo_control", "placebo_treatment"),
+  term = c("before_control", "before_treatment"),
   estimate = c(0, 0),
   std_error = c(0, 0),
   group = c("control", "treatment"),

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  19 JAN 2026 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  20 JAN 2026 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -144,6 +144,22 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip55
+\RaggedLeftLeftskip=\skip56
+\RaggedRightLeftskip=\skip57
+\CenteringRightskip=\skip58
+\RaggedLeftRightskip=\skip59
+\RaggedRightRightskip=\skip60
+\CenteringParfillskip=\skip61
+\RaggedLeftParfillskip=\skip62
+\RaggedRightParfillskip=\skip63
+\JustifyingParfillskip=\skip64
+\CenteringParindent=\skip65
+\RaggedLeftParindent=\skip66
+\RaggedRightParindent=\skip67
+\JustifyingParindent=\skip68
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -173,20 +189,20 @@ LaTeX Warning: Label `fig:parallel_trends_averages' multiply defined.
 )
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count291
@@ -212,7 +228,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 
 [1]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 64.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 65.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
@@ -221,12 +237,12 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 <Choosing_lambda_Lasso.pdf, id=24, 712.6625pt x 366.36874pt>
 File: Choosing_lambda_Lasso.pdf Graphic file (type pdf)
 <use Choosing_lambda_Lasso.pdf>
-Package pdftex.def Info: Choosing_lambda_Lasso.pdf  used on input line 73.
+Package pdftex.def Info: Choosing_lambda_Lasso.pdf  used on input line 74.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 <Propensity_score_density.pdf, id=25, 712.6625pt x 366.36874pt>
 File: Propensity_score_density.pdf Graphic file (type pdf)
 <use Propensity_score_density.pdf>
-Package pdftex.def Info: Propensity_score_density.pdf  used on input line 83.
+Package pdftex.def Info: Propensity_score_density.pdf  used on input line 84.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
 
@@ -236,12 +252,12 @@ Package pdftex.def Info: Propensity_score_density.pdf  used on input line 83.
 <Parallel_trends_averages.pdf, id=46, 712.6625pt x 366.36874pt>
 File: Parallel_trends_averages.pdf Graphic file (type pdf)
 <use Parallel_trends_averages.pdf>
-Package pdftex.def Info: Parallel_trends_averages.pdf  used on input line 132.
+Package pdftex.def Info: Parallel_trends_averages.pdf  used on input line 133.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 <Parallel_trends_event_study.pdf, id=47, 712.6625pt x 366.36874pt>
 File: Parallel_trends_event_study.pdf Graphic file (type pdf)
 <use Parallel_trends_event_study.pdf>
-Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 139.
+Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 140.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
 
@@ -261,7 +277,7 @@ Package pdftex.def Info: Parallel_trends_event_study.pdf  used on input line 139
 <Countryeffects.pdf, id=81, 712.6625pt x 366.36874pt>
 File: Countryeffects.pdf Graphic file (type pdf)
 <use Countryeffects.pdf>
-Package pdftex.def Info: Countryeffects.pdf  used on input line 559.
+Package pdftex.def Info: Countryeffects.pdf  used on input line 569.
 (pdftex.def)             Requested size: 276.00105pt x 141.88815pt.
 
 
@@ -276,15 +292,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2599 strings out of 473190
- 41631 string characters out of 5715799
- 452360 words of memory out of 5000000
- 25832 multiletter control sequences out of 15000+600000
+ 2686 strings out of 473190
+ 43538 string characters out of 5715799
+ 452973 words of memory out of 5000000
+ 25915 multiletter control sequences out of 15000+600000
  562682 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,9n,65p,862b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb>
-Output written on paper.pdf (13 pages, 225901 bytes).
+Output written on paper.pdf (13 pages, 226303 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream

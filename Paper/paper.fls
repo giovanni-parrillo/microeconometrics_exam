@@ -44,6 +44,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/doublestroke/dsfont.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/doublestroke/dsfont.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty

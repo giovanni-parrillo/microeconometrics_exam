@@ -108,3 +108,38 @@ ggplot(final_results, aes(x = time, y = estimate, color = group)) +
     limits = c(-4, 4)) +
   theme_minimal()
 
+
+  # Below a computation of cumulative effects (replicating Table 8)
+
+# lincomb <- function(model, terms){
+#   b <- coef(model)
+#   V <- vcov(model)
+
+#   L <- setNames(rep(0, length(b)), names(b))
+#   L[terms] <- 1
+
+#   est <- sum(L * b)
+#   se  <- sqrt(as.numeric(t(L) %*% V %*% L))
+
+#   c(estimate = est, se = se)
+# }
+
+
+# terms_no   <- c("rta", "lag_1", "lag_2", "lag_3")
+# terms_env  <- c("enviro_rta", "enviro_lag_1", "enviro_lag_2", "enviro_lag_3")
+# terms_with <- c(terms_no, terms_env)
+
+# # Log forest loss
+# no_loss   <- lincomb(country_model, terms_no)
+# with_loss <- lincomb(country_model, terms_with)
+# rel_loss  <- lincomb(country_model, terms_env)
+
+# # # Deforestation rate
+# # no_rate   <- lincomb(m_rate, terms_no)
+# # with_rate <- lincomb(m_rate, terms_with)
+# # rel_rate  <- lincomb(m_rate, terms_env)
+
+
+# # no_loss
+# # with_loss
+# # rel_loss

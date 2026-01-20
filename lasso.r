@@ -3,8 +3,8 @@ library(dplyr)
 library(fastDummies) # Install if needed: install.packages("fastDummies")
 library(fastDummies)
 
-df <- read.csv('rta.csv')
-df_panel <- read.csv('rta_panel.csv')
+df <- read.csv('rta_data.csv')
+df_panel <- read.csv('rta_panel_full.csv')
 
 # Filter to keep only RTAs present in the panel (Consistency check)
 df <- df %>% filter(id %in% df_panel$id)

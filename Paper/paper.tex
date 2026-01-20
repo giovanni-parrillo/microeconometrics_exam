@@ -21,11 +21,11 @@
 
 This paper aims to replicate the findings of Abman, R., Lundberg, C., and Ruta, M. (2024) on the effectiveness of environmental provisions in Regional Trade Agreements (RTAs).
 
-In the original paper, the authors considered different Regional Trade Agreements between Countries or group of Countries and looked at whether the inclusion of enviromental provisions aimed at reducing the enviromental impact of trade agreements resulted effective.
+In the original paper, the authors considered different Regional Trade Agreements between Countries or group of Countries and looked at whether the inclusion of enviromental provisions aimed at reducing the enviromental impact of trade agreements was effective.
 
 In particular, they looked at the impact of Regional Trade Agreements on deforestation in Countries involved in the agreements.
 
-The rationale behind the study is that the implementation of RTAs lead to increased trade flows between the Countries involved, with particular effect on the trade of agricultural goods: higher demand for agricultural goods incentives deforestation in order to convert to agriculture portions of land that were previously devoted to forest.
+The rationale behind the study is that the implementation of RTAs lead to increased trade flows between the Countries involved, with particular effect on the trade of agricultural goods: higher demand for agricultural goods incentivates deforestation in order to convert to agriculture portions of land that were previously devoted to forest.
 
 On the other side, the inclusion of enviromental provisions should be aimed at reducing the enviromental impact of RTAs, and in particular they should mitigate the effect on deforestation.
 
@@ -56,7 +56,7 @@ We can think of $\lambda$ as a penalisation term because it penalises the inclus
 In order to choose the best value of penalisation term $\lambda$, we adopted the same strategy used in the paper: using the value that minimizes the mean $k$-fold cross-validation error.
 
 In fact, the use of penalisation term $\lambda$ has two effects on the Mean Squared Error in the estimation of the parameters: on one side, it reduces variance by constraining the estimated coefficients; on the other side, it introduces a bias in the estimation.
-While we can't observe the variance and the bias of the estimator, we can estimate them through cross-validation dividing iteravitely the sample in testing and training set.
+While we can't observe the variance and the bias of the estimator, we can estimate them through cross-validation dividing iteratively the sample in testing and training set.
 However, we will not explore in detail the methodology as it did not involve any particular intervention by us: using \textit{glmnet} library, we were able to obtain automatically $\lambda$ that minimises estimated MSE, and use it to get estimated coefficients.
 
 To be more precise, instead of using LASSO regression directly, we used a LASSO logistic regression, as the dependent variable is a dummy variable.
@@ -104,7 +104,7 @@ The variable $\mathds{1}[\text{Enviro\_RTA}_g]$ is a dummy variable equal to 1 i
 Consequently, the coefficient $\beta_1$ captures the effect of RTAs without enviromental provisions on the outcome variable, while the coefficient $\beta_2$ captures the additional effect of RTAs with enviromental provisions.
 Therefore, the total effect of RTAs with enviromental provisions is given by the sum of $\beta_1$ and $\beta_2$.
 
-In order to give causal interpretation to the estimated coefficients, we need that some assumptions hold.
+In order to give causal interpretation to the estimated coefficients, we need some assumptions to hold.
 First of all, we need the Stable Unit Treatment Value Assumption (SUTVA) to hold: this assumption requires that the potential outcomes for any unit do not vary with the treatments assigned to other units, and that for each unit, there are no different forms or versions of each treatment level, which lead to different potential outcomes.
 
 The authors do not discuss in detail the possibility that different levels of enviromental provisions may lead to different potential outcomes, therefore we will assume that all enviromental provisions in our dataset have similar effects on the outcome variable.
@@ -131,14 +131,14 @@ It can be noted that the two plots are basically equivalent: in fact, the second
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{Parallel_trends_averages.pdf}
-\caption{Parallel Trends: Average Deforestation Rates}
+\caption{Parallel Trends: Evolution of average log losses}
 \label{fig:parallel_trends_averages}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{Parallel_trends_event_study.pdf}
-\caption{Parallel Trends: Average Deforestation Rates}
+\caption{Parallel Trends: Coefficients from events study}
 \label{fig:parallel_trends_event_study}
 \end{figure}
 
@@ -560,7 +560,7 @@ The model estimated is the following:
    &  \alpha_i + \gamma_t + \varepsilon_{it}
 \end{align*}
 
-In the figure below, we present the estimated $\delta_s$ coefficients, which are represented by the control group line, and the estimated combined effect of having an RTA with enviromental provisions, represented by the treatment group line.
+In the figure below, we present the estimated $\delta_s$ coefficients, which are represented by the control group line, and the estimated combined effect of having an RTA with enviromental provisions ($\delta_s + \xi_s$), represented by the treatment group line.
 
 \vspace{2em}
 

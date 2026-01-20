@@ -2,7 +2,7 @@ library(MatchIt)
 library(dplyr)
 
 df <- read.csv('rta_propensity.csv')
-panel_df <- read.csv('rta_panel.csv')
+panel_df <- read.csv('rta_panel_full.csv')
 
 # We match Agreement to Agreement based on their static characteristics
 matchit_model <- matchit(enviro_rta ~ predicted_prob, 
